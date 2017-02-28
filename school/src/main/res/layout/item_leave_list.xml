@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_leave"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:padding="@dimen/space"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="请假申请"
+            android:textColor="@color/main_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ts_x_large"/>
+        <TextView
+            android:textColor="@color/minor_text"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="2016-09-17"
+            android:id="@+id/tv_date"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:paddingLeft="@dimen/space_x2"
+        android:layout_marginBottom="@dimen/space"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/minor_text"
+            android:text="请假姓名："
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                <TextView
+            android:id="@+id/tv_name"
+            android:textColor="#494949"
+            android:layout_marginLeft="@dimen/space"
+            android:text="王桦"
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/space"
+        android:paddingLeft="@dimen/space_x2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:text="开始时间："
+            android:textSize="@dimen/ts_x_large"
+            android:textColor="@color/minor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:id="@+id/tv_timeStart"
+            android:textColor="#494949"
+            android:layout_marginLeft="@dimen/space"
+            android:text="2016-09-17 11:30"
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/minor_text"
+            android:layout_marginTop="@dimen/space"
+            android:layout_below="@+id/tv_start_time"
+            android:id="@+id/tv_end_time"
+            android:text="结束时间："
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_timeEnd"
+            android:layout_marginTop="@dimen/space"
+            android:layout_marginLeft="@dimen/space"
+            android:textSize="@dimen/ts_x_large"
+            android:textColor="@color/theme_text"
+            android:text="2016-09-18 20:00"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:layout_below="@id/tv_timeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:padding="@dimen/space_x0.5"
+            android:background="@color/main_green"
+            android:layout_marginRight="@dimen/space_x2"
+            android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+            android:id="@+id/tv_read"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/space"
+            android:textSize="@dimen/ts_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/space_x2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/minor_text"
+            android:id="@+id/reason"
+            android:text="请假事由："
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_toRightOf="@+id/reason"
+            android:textColor="#494949"
+            android:layout_marginLeft="@dimen/space"
+            android:text="回家"
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/space_x2"
+        android:layout_marginTop="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@color/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

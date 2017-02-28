@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:padding="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+        <TextView
+            android:paddingTop="@dimen/space_x1.5"
+            android:layout_centerInParent="true"
+            android:text="通讯"
+            android:textSize="@dimen/ts_xx_large"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:paddingTop="@dimen/space_x1.5"
+            android:visibility="gone"
+            android:id="@+id/iv_search"
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:background="@color/bg_layout"
+        android:id="@+id/rg_choose"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:checked="true"
+            android:text="@string/message"
+            android:id="@+id/rb_message"
+           style="@style/tab_btn" />
+        <RadioButton
+            android:text="@string/contract"
+            android:id="@+id/rb_contract"
+            style="@style/tab_btn" />
+        <RadioButton
+            android:text="@string/group"
+            android:id="@+id/rb_group"
+            style="@style/tab_btn"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="-5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+        <View
+            android:id="@+id/line_message"
+            style="@style/tab_line"
+            android:background="@color/main_text_green"/>
+        <View
+            android:id="@+id/line_contract"
+            android:text="@string/contract"
+            style="@style/tab_line" />
+        <View
+            android:id="@+id/line_group"
+            android:text="@string/group"
+            style="@style/tab_line"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

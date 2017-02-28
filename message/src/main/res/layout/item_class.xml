@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:id="@+id/tv_class"
+      android:padding="@dimen/space_x2"
+      android:text="苗苗班"
+      android:textColor="@color/theme_text"
+      android:textSize="@dimen/ts_x_large"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <View
+        android:paddingLeft="@dimen/space_x2"
+        android:background="@color/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

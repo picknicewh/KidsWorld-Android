@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg_layout"
+    tools:context=".activity.UMassageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_userMessage"
+        android:layout_marginTop="@dimen/space"
+        android:background="@drawable/layout_selecter"
+        android:padding="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyleBase"
+            android:text="头像" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/space"
+            android:id="@+id/iv_right"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_right"
+            android:layout_alignParentRight="true"/>
+
+        <net.hongzhang.baselibrary.widget.CircleImageView
+            android:id="@+id/cv_head"
+            android:background="@drawable/bg_head_portrait"
+            android:layout_toLeftOf="@id/iv_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_selecter">
+
+        <LinearLayout
+            android:background="@drawable/layout_select_not_line"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                style="@style/TextStyleBase"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="姓名"/>
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                android:id="@+id/tv_name"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈哈"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_sex"
+            android:background="@drawable/layout_select_not_line"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                android:layout_gravity="center"
+                style="@style/TextStyleBase"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="性别"/>
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                android:id="@+id/tv_sex"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_sign"
+            android:background="@drawable/layout_select_not_line"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                android:layout_gravity="center"
+                style="@style/TextStyleBase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签名"/>
+
+            <TextView
+                android:paddingTop="@dimen/space_x0.5"
+                android:paddingBottom="@dimen/space_x0.5"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:gravity="right"
+                android:id="@+id/tv_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="你还没有设置签名哦"/>
+
+            <ImageView
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_selecter">
+        <LinearLayout
+            android:background="@drawable/layout_select_not_line"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                style="@style/TextStyleBase"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="班级"/>
+
+            <TextView
+                android:id="@+id/tv_classname"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苗苗班"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:background="@drawable/layout_select_not_line"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                style="@style/TextStyleBase"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="学校"/>
+
+            <TextView
+                android:id="@+id/tv_schoolname"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恒镁幼儿园"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

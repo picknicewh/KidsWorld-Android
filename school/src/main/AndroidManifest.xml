@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.hongzhang.school">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="net.hongzhang.school.activity.LeaveAskActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="net.hongzhang.school.activity.PublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.hongzhang.school.activity.PublishDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="net.hongzhang.school.activity.LeaveListActivity"/>
+        <activity android:name="net.hongzhang.school.activity.CourseArrangeActivity" />
+        <activity android:name="net.hongzhang.school.activity.FoodListActivity" />
+        <activity
+            android:name="net.hongzhang.school.TestActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="net.hongzhang.school.activity.TestActivity" />
+        <activity android:name="net.hongzhang.school.activity.ClassListActivity" />
+        <activity android:name="net.hongzhang.school.activity.PublishFoodActivity" />
+        <activity android:name="net.hongzhang.school.activity.PublishInfoActivity" />
+        <activity android:name="net.hongzhang.school.activity.ChooseClassActivity" />
+        <activity android:name="net.hongzhang.school.activity.MedicineListTActivity" />
+        <activity android:name="net.hongzhang.school.activity.MedicineListSActivity" />
+        <activity android:name="net.hongzhang.school.activity.MedicineTaskTActivity" />
+        <activity android:name="net.hongzhang.school.activity.MedicineEntrustActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

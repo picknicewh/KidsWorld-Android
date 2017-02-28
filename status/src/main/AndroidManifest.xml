@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.hongzhang.status">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="net.hongzhang.status.activity.PublishStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.hongzhang.status.activity.ChoosePermitActivity"
+            android:screenOrientation="portrait" />
+
+        <PreferenceScreen
+            android:summary="@string/radio_controls_summary"
+            android:title="@string/radio_controls_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.WirelessSettings"
+                android:targetPackage="com.android.settings" />
+        </PreferenceScreen>
+
+        <activity android:name="net.hongzhang.status.activity.MessageDetailActivity"></activity>
+    </application>
+
+</manifest>

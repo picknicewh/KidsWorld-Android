@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cordova.HMDroidGap">
+    <LinearLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingTop="@dimen/space_x1.5"
+        android:background="@color/theme_green">
+            <ImageView
+                android:paddingLeft="@dimen/space"
+                android:paddingRight="@dimen/space"
+                android:layout_gravity="center"
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_lift" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_xx_large"
+                android:text="我的收藏"
+                android:layout_gravity="center"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/space"
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_large"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <ImageView
+
+                android:src="@mipmap/ic_empty"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_test"/>
+    </LinearLayout>
+    <include
+        android:id="@+id/rl_nonetwork"
+        layout="@layout/nonetwork"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.apache.cordova.engine.SystemWebView
+            android:id="@+id/cordovaWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </org.apache.cordova.engine.SystemWebView>
+
+        <ProgressBar
+            android:id="@+id/pb_web"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_x0.5"
+            android:max="100"
+            android:background="@drawable/progress_bar_states"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    </RelativeLayout>
+</LinearLayout>
